@@ -1,4 +1,6 @@
 import java.io.*;
+import java.awt.*;
+import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.text.*;
 
@@ -11,7 +13,13 @@ class JavNote extends JFrame {
 
     /* constructor */
     public JavNote() {
-	
+	JMenuBar menuBar = new JMenuBar();
+	menuBar.add(new JMenu("File"));
+	setJMenuBar(menuBar);
+	setVisible(true);
+    }
+
+    public static void main(String[] args) {
+	new JavNote();
     }
 }
-
