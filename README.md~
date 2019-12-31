@@ -1,1 +1,5 @@
 # java-notepad
+Compile with
+` $ javac JavNote.java Notepad.java`
+Execute with 
+` $ java JavNote`
