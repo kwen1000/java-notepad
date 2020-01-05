@@ -5,14 +5,13 @@ import javax.swing.*;
 import javax.swing.text.*;
 
 class Notepad extends JFrame {
-    /* Text Editor */
     private JTextArea editor = new JTextArea(20, 50);
-    private JFileChooser dialog = 
+    private JFileChooser fileChooser = 
 	new JFileChooser(System.getProperty("user.dir"));
     private String fileName = "";
     private Font font = new Font("Arial", Font.PLAIN, 12);
 
-    /* constructor */
+    // constructor
     public Notepad() {
 	setTitle(fileName);
 	setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -26,5 +25,16 @@ class Notepad extends JFrame {
 	setJMenuBar(menuBar);
 	setVisible(true);
 	pack();
+    }
+
+    // save file as...
+    private void saveNewFile() {
+    }
+
+    // save
+    private void saveInstant() {
+	FileWriter fileWriter = new FileWriter();
+	editor.write(filewriter);
+	filewriter.close();
     }
 }
