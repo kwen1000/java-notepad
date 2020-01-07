@@ -1,6 +1,6 @@
 import java.io.*;
 
-class JavNote extends JFrame {
+class JavNote {
     public static void main(String[] args) {
 	new Notepad();
     }
