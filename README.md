@@ -1,6 +1,6 @@
 # java-notepad
 
-Optional: compile with ` $ javac JavNote.java Notepad.java`
+Optional: compile with ` $ ./compile.sh`
 
 Execute with:
 

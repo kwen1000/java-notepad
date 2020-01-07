@@ -33,8 +33,11 @@ class Notepad extends JFrame {
 
     // save
     private void saveInstant() {
-	FileWriter fileWriter = new FileWriter();
-	editor.write(filewriter);
-	filewriter.close();
+	try {
+	    FileWriter fileWriter = new FileWriter(fileName);
+	    editor.write(fileWriter);
+	    fileWriter.close();
+	}
+	catch (IOException exception) {}
     }
 }

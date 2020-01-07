@@ -1,0 +1,1 @@
+javac JavNote.java Notepad.java

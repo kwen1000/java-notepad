@@ -29,14 +29,12 @@ class Notepad extends JFrame {
 
     // save file as...
     private void saveNewFile() {
-	fileChooser.saveDialog(null);
-	
     }
 
     // save
     private void saveInstant() {
-	FileWriter fileWriter = new FileWriter();
-	editor.write(filewriter);
-	filewriter.close();
+	FileWriter fileWriter = new FileWriter(fileName);
+	editor.write(fileWriter);
+	fileWriter.close();
     }
 }
